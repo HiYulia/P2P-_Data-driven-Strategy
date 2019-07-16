@@ -35,10 +35,13 @@ If we do not exclude leakage features, our AUC (area under curve) is about 1, wh
 ### AUC
 This is again one of the popular metrics used in the industry.  
 AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. Higher the AUC, better the model is at distinguishing between patients with disease and no disease.
+
 ![Image of auc](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/AUC.png)
 
 Finally, we selected 34 features, which is shown below.
+
 ![Image of selected](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/selected.png)
+
 ## Classification
 
 We used three algorithm(Logistic Classification, Naive Bayes and Random Forest) to predict default for loans and finally choose Random Forest at an AUC with 0.68
@@ -53,7 +56,9 @@ Method 2 (M2—Optimistic) supposes that, once the loan is paid back, the invest
 Method 3 ( M3) considers a fixed time horizon (e.g., T months) and calculates the return on investing in a particular loan under the assumption that any revenues paid out from the loan are immediately reinvested at a yearly rate of i%, compounded monthly, until the T-month horizon is over (throughout this case study, we consider a 5-year horizon, i.e., T = 60).
 
 We used five Algorithm methods to predict return rate for each loan by using calculation methods mentioned above. For M3, we give two i%, which are 1.2% and 3%. Here five Algorithm methods are Linear Regression, Ridge Regression, Lasso Regression, Random Forest and Neural Network.
+
 ![Image of regression](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/regression.png)
+
 For this project, I chose M1—Pessimistic. Since Neural Network has the lowest R^2, we use
 Neural Network for the next steps.
 ## Optimization
@@ -67,10 +72,13 @@ four Strategies that can be used
 4. Default and return-based strategy (DefRet)—training two additional models—one to predict the return on loans that did not default, and one to predict the return on loans that did default. Then, using the probability of default to find the expected value of the return from each future loan. Invest in the loans with the highest expected returns.
 
 Here I use the default and return-based strategy (DefRet) and M1-Pessimistic return calculation methods.
+
 ![Image of stand](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/standby.png)
 
 ● Maximizing the total expected profit
 ● 900<=Num_loans<= 1000
 ● Budget <=10000000
+
 ![Image of opt](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/optmization.png)
+
 Here we get the objective-return rate at 0.024955
