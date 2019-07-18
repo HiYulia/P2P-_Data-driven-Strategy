@@ -82,3 +82,5 @@ Here I use the default and return-based strategy (DefRet) and M1-Pessimistic ret
 ![Image of opt](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/optmization.png)
 
 Here we get the objective-return rate at 0.024955
+
+the picture of last one and the r^2 problem.
