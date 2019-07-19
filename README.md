@@ -59,7 +59,7 @@ We used five Algorithm methods to predict return rate for each loan by using cal
 
 ![Image of regression](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/regression.png)
 
-For this project, I chose M1—Pessimistic. Since Neural Network has the lowest R^2, we use
+For this project, I chose M1—Pessimistic. Since Random Forest has the Highest R^2, we use
 Neural Network for the next steps.
 ## Optimization
 four Strategies that can be used
