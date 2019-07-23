@@ -81,10 +81,17 @@ four Strategies that can be used
 
 ● Maximizing the total expected profit
 ● 900<=Num_loans<= 1000
-● Budget <=10000000
+● beta = 0.009
+● Budget = 10.7*1000000
+beta：sensitivity parameter that is manually set by the investor depending on the risk aversion tolerated
+
+For each loan i, s(i)= cluster label; theta(s(i))=the standard deviation of return. 
+
+maximize the total revenue while imposing a standard deviation tolerance T(note that we assume independence across the different loans)
+
+To estimate the standard devi- ation by grouping several loans together using the k-means clustering method
 
 ![Image of opt](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/defret%2Bm1.png)
 
 Here we get the objective-return rate at 0.024955
 
-the picture of last one and the r^2 problem.
