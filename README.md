@@ -83,6 +83,7 @@ four Strategies that can be used
 ● 900<=Num_loans<= 1000
 ● beta = 0.009
 ● Budget = 10.7*1000000
+
 beta：sensitivity parameter that is manually set by the investor depending on the risk aversion tolerated
 
 For each loan i, s(i)= cluster label; theta(s(i))=the standard deviation of return. 
