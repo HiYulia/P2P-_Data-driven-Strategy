@@ -71,15 +71,19 @@ four Strategies that can be used
 
 4. Default and return-based strategy (DefRet)—training two additional models—one to predict the return on loans that did not default, and one to predict the return on loans that did default. Then, using the probability of default to find the expected value of the return from each future loan. Invest in the loans with the highest expected returns.
 
-Here I use the default and return-based strategy (DefRet) and M1-Pessimistic return calculation methods.
-
 ![Image of stand](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/standby.png)
+
+### Simple return-based strategy (Ret)+M1-Pessimistic
+
+![Image of retm1](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/Ret%2BM1.png)
+
+###  default and return-based strategy (DefRet)+M1-Pessimistic
 
 ● Maximizing the total expected profit
 ● 900<=Num_loans<= 1000
 ● Budget <=10000000
 
-![Image of opt](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/optmization.png)
+![Image of opt](https://github.com/xinyueniu/P2P-_Data-driven-Strategy/blob/master/defret%2Bm1.png)
 
 Here we get the objective-return rate at 0.024955
 
